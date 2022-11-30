@@ -28,6 +28,11 @@ public class AttestationTest {
     }
 
     @Test
+    public void tdxGenerateQuoteTest() throws Exception {
+        assertTrue(Attestation.tdxGenerateQuote());
+    }
+
+    @Test
     public void verifyBadQuote() throws Exception {
         // null
         assertTrue(Attestation.sdkVerifyQuote(null) == -1);
