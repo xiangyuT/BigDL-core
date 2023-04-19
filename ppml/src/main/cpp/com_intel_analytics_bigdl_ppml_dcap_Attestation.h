@@ -17,6 +17,14 @@ JNIEXPORT jint JNICALL Java_com_intel_analytics_bigdl_ppml_dcap_Attestation_sdkV
 
 /*
  * Class:     com_intel_analytics_bigdl_ppml_dcap_Attestation
+ * Method:    sdkOfflineVerifyQuote
+ * Signature: ([BLjava/lang/String;)I
+ */
+JNIEXPORT jint JNICALL Java_com_intel_analytics_bigdl_ppml_dcap_Attestation_sdkOfflineVerifyQuote
+  (JNIEnv *, jclass, jbyteArray, jstring);
+
+/*
+ * Class:     com_intel_analytics_bigdl_ppml_dcap_Attestation
  * Method:    tdxGenerateQuote
  * Signature: ([B])[B
  */
