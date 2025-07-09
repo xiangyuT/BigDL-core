@@ -1,0 +1,1 @@
+python3 setup.py clean --all bdist_wheel --plat-name manylinux2010_x86_64 --python-tag py3
