@@ -29,10 +29,10 @@ _major_version = ''.join(_ipex_version.split('.')[:2])  # equal to 21
 suffix_name = "-" + _major_version
 
 setup(
-    name="bigdl-core-xe-addons" + suffix_name,
+    name="bigdl-core-llm" + suffix_name,
     version=VERSION,
     ext_modules=[
-        DPCPPExtension('xe_addons', [
+        DPCPPExtension('bigdl_core_llm', [
             'xpu_addon_ops.cpp',
             'norm.cpp',
         ],
