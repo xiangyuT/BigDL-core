@@ -1,12 +1,12 @@
 cmake_minimum_required(VERSION 3.16)
-project(bigdl_core_llm LANGUAGES C CXX)
+project(bigdl_core LANGUAGES C CXX)
 
 find_package(IntelSYCL REQUIRED)
 find_package(Torch REQUIRED)
 find_package(PythonExtensions REQUIRED)
 find_library(TORCH_PYTHON_LIBRARYS torch_python PATH "${TORCH_INSTALL_PREFIX}/lib")
 
-set(MODULE_NAME bigdl_core_llm)
+set(MODULE_NAME bigdl_core)
 
 set(SYCL_SRCS  norm.cpp)
 
